@@ -1,4 +1,6 @@
-# webvm (noVNC per-user container manager)
+# NOT WORKING! IF SOMEONE CAN FIND A GOOD DOCKER_HOST, THAT WOULD BE NICE!
+
+## webvm (noVNC per-user container manager)
 
 This repository provides a starter setup to run GUI desktops (with a web-accessible noVNC client) in per-user Docker containers, fronted by Traefik. A small manager service creates per-user containers and configures Traefik routing so each user's desktop is available at username.DOMAIN (HTTPS via Let's Encrypt if configured).
 
