@@ -1,0 +1,19 @@
+{
+  "name": "webvm-codespace",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "forwardPorts": [3000, 8080],
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "remoteUser": "vscode"
+}
